@@ -1,0 +1,508 @@
+/*
+    Written By:    Ahmed Sherif
+    Profile:       www.ahmedsherif.website
+    E-mail:        ahmedabdelbarysherif@gmail.com
+    Phone:         002 0114 116 8846
+    
+    Web Site Name: Task
+    Version:       1.0.0
+
+    Font Family:
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'PT Sans', sans-serif;      
+*/
+
+:root {
+    --main-color:    #3a3053;
+    --second-color:  #28d2d2;
+    --third-color:   #949399;
+    --dark-color:    #232027;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: #f0f1f6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'PT Sans', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    text-shadow: none;
+}
+
+/*======================================== Start Home ========================================*/
+/*========== Start navbar ==========*/
+.navbar {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 0;
+    border: 0;
+    padding: 40px 0
+}
+
+.navbar .navbar-brand {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 30px;
+    color: var(--main-color);
+    font-weight: 800;
+    margin-right: 50px;
+}
+
+.navbar .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    color: var(--third-color);
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav>li.active  a {
+    background-color: unset !important;
+    color: var(--main-color);
+}
+
+.navbar .navbar-right a:hover {
+    border-radius: 40px;
+    color: #fff !important;
+    background-color: var(--second-color) !important;
+} 
+/*========== End navbar ==========*/
+
+/*========== Start hero ==========*/
+.hero {
+    height: 90vh;
+    background: #fff url('../imgs/illustration-working.svg') no-repeat;
+    background-position: 105% 40%;
+    background-size: 42%;
+}
+
+.hero__info {
+    padding-top: 28vh;
+}
+
+.hero__info h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 73px;
+    color: var(--main-color);
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.hero__info p {
+    width: 80%;
+    margin-bottom: 80px;
+    font-size: 25px;
+    color: var(--third-color);
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.hero__info a {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: var(--second-color);
+    border-radius: 40px;
+}
+/*========== End hero ==========*/
+
+/*========== Start links ==========*/
+.links__main {
+    margin-top: -90px;
+    border-radius: 7px;
+    padding: 60px 80px 40px 80px;
+    background: #34313c url('../imgs/bg-shorten-desktop.svg') no-repeat;
+    background-size: cover
+}
+
+.links__main form {
+    display: flex;
+}
+
+.links__main form input {
+    height: 50px;
+    width: 85%;
+    padding: 0 0 0 20px;
+    border-radius: 6px;
+    border: 2px solid transparent
+}
+
+.links__main form input::placeholder {
+    color: var(--third-color);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.links__main form button {
+    border-radius: 8px;
+    height: 50px;
+    width: 20%;
+    margin-left: 3%;
+    border: 0;
+    font-family: 'Archivo Black', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    background-color: var(--second-color);
+    padding: 0 0 0 0;
+}
+
+.links__main__alert {
+    display: block;
+    color: red
+}
+
+.links__main__res {
+    display: flex;
+    margin: 10px 0;
+    padding: 16px 38px;
+    border-radius: 8px;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+.links__main__res p {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.links__main__res__copy {
+    display: flex
+}
+
+.links__main__res__copy p {
+    color: var(--second-color);
+}
+
+.links__main__res__copy button {
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--second-color);
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    padding: 6px 30px;
+    transition: background .2 ease-in-out
+}
+
+.links__main__res__copy button:hover,
+.links__main form button:hover,
+.hero__info a:hover {
+    background: var(--main-color);
+}
+/*========== End links ==========*/
+
+/*========== Start adv ==========*/
+.adv {
+    padding: 120px 0
+}
+
+.adv__head h2 {
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--main-color);
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.adv__head p {
+    width: 47%;
+    margin: auto;
+    margin-bottom: 121px;
+    font-size: 18px;
+    color: var(--third-color);
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.adv__info {
+    background-color: #fff;
+    padding: 30px 25px
+}
+
+.adv .col-xs-12:nth-of-type(2) .adv__info {
+    position: relative;
+    margin-top: 60px
+}
+
+.adv .col-xs-12:nth-of-type(2) .adv__info::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 30px;
+    height: 6px;
+    background-color: var(--second-color);
+}
+
+.adv .col-xs-12:nth-of-type(2) .adv__info::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    width: 30px;
+    height: 6px;
+    background-color: var(--second-color);
+}
+
+.adv .col-xs-12:nth-of-type(3) .adv__info {
+    margin-top: 120px
+}
+
+.adv__info h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--main-color);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.adv__info p {
+    font-size: 18px;
+    color: var(--third-color);
+    line-height: 1.7;
+}
+
+.adv__info__icon {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    margin-top: -79px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--main-color);
+}
+/*========== End adv ==========*/
+
+/*========== Start boost ==========*/
+.boost {
+    padding: 100px 0;
+    background: #3a3053 url('../imgs/bg-boost-desktop.svg') no-repeat;
+    background-size: cover;
+}
+
+.boost h3 {
+    margin-bottom: 50px;
+    font-family: 'Archivo Black', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.boost a {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: var(--second-color);
+    border-radius: 40px;
+}
+/*========== End boost ==========*/
+
+/*========== Start footer ==========*/
+footer {
+    padding: 100px 0;
+    background-color: var(--dark-color);
+}
+
+.footer__logo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.footer__links h4 {
+    margin-bottom: 30px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer__links ul a {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--third-color);
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.footer__links > a {
+    color: #fff;
+    font-size: 20px;
+}
+/*========== End footer ==========*/
+/*======================================== End Home ========================================*/
+
+
+@media(max-width: 779px) {
+    .navbar-collapse {
+        background-color: var(--main-color);
+        border-radius: 10px;
+    }
+
+    .navbar a:not(.navbar-brand) {
+        color: #fff !important;
+    }
+
+    .navbar-toggle {
+        border: none;
+    }
+
+    .hero {
+        height: 90vh;
+        background-position: -8% 23%;
+        background-size: 99%;
+    }
+
+    .hero__info {
+        padding-top: 45vh;
+        text-align: center
+    }
+
+    .hero__info h1 {
+        font-size: 43px;
+    }
+
+    .hero__info p {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .links__main {
+        margin-top: -90px;
+        border-radius: 7px;
+        padding: 30px 20px 10px 20px;
+    }
+
+    .links__main form {
+        display: block;
+    }
+
+    .links__main form input {
+        height: 40px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0 0 0 10px;
+        border-radius: 4px;
+    }
+
+    .links__main form button {
+        width: 100%;
+        border-radius: 4px;
+        height: 40px;
+        margin-left: 0;
+    }
+
+    .links__main__res {
+        display: block;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .links__main__res__copy {
+        display: block;
+    }
+
+    .links__main__res__copy button {
+        margin-left: 0;
+        width: 100%
+    }
+
+    .adv {
+        padding: 40px 0;
+    }
+
+    .adv__head h2 {
+        font-size: 30px;
+    }
+
+    .adv__head p {
+        width: 100%;
+        margin-bottom: 80px;
+        font-size: 15px;
+    }
+
+    .adv__info {
+        margin-bottom: 100px;
+        text-align: center
+    }
+
+    .adv__info__icon {
+        margin-top: -79px;
+        margin-left: 125px;
+    }
+
+    .adv .col-xs-12:nth-of-type(2) .adv__info,
+    .adv .col-xs-12:nth-of-type(3) .adv__info {
+        margin-top: 0;
+    }
+
+    .adv .col-xs-12:nth-of-type(2) .adv__info::after {
+        top: -37.5%;
+        right: 197px;
+        width: 6px;
+        height: 50px;
+    }
+
+    .adv .col-xs-12:nth-of-type(2) .adv__info::before {
+        top: 100.5%;
+        left: 197px;
+        width: 6px;
+        height: 50px;
+    }
+
+    .boost {
+        padding: 100px 0;
+    }
+
+    .boost h3 {
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    .footer__logo {
+     text-align: center;
+    }
+
+    .footer__links h4 {
+        text-align: center;
+    }
+
+    .footer__links ul a {
+        display: block;
+        text-align: center
+    }
+
+    .footer__links {
+        margin-top: 40px;
+        text-align: center
+    }
+}
